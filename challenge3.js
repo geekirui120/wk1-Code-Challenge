@@ -1,6 +1,5 @@
-function netSalaryCalculator() {
-    const basicSalary = parseFloat(prompt("Enter your basic salary:"));
-    const benefits = parseFloat(prompt("Enter your benefits:"));
+function netSalaryCalculator(basicSalary, benefits){
+    
 
     if (isNaN(basicSalary) || isNaN(benefits)) {
         console.log("Invalid input. Please enter numeric values.");
@@ -40,6 +39,7 @@ function netSalaryCalculator() {
     console.log(`NHIF Deduction: ${nhifDeduction}`);
     console.log(`NSSF Deduction: ${nssfDeduction}`);
     console.log(`Net Salary: ${netSalary}`);
-}
+ }
+    console.log(netSalaryCalculator(55000, 10000));
 
-netSalaryCalculator();
+//netSalaryCalculator();
